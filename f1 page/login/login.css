@@ -1,0 +1,109 @@
+*
+{
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: #f8f4f1;
+  margin: 0;
+  padding: 0;
+}
+
+.banner1
+{
+  width: 100vw;
+  height: 70px;
+  background-color: #15151e;
+}
+
+.banner2
+{
+  width: 100vw;
+  height: 60px;
+  background-color: #333;
+}
+
+.auth-buttons
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+button
+{
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.sign-in
+{
+  background-color: #fff;
+  color: #ff0000;
+}
+
+.register
+{
+  background-color: #fff;
+  color: #ff0000;
+}
+
+button:hover
+{
+  background-color: red;
+  color: white;
+}
+
+.logot{
+  width: 100px; /* Set the desired width */
+  height: 100px; /* Maintain aspect ratio */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.header
+{
+  font-family: 'Russo One', sans-serif;
+  color: #373535; /* Optional: Red to match F1 branding */
+  letter-spacing: -1px; /* Optional: Tighten spacing */
+}
+.line
+{
+  width:700px;
+}
+.text
+{
+  display: grid;
+  grid-template-columns: 2;
+  gap: 1rem;
+  margin-top: 15px;
+  font-family: "Titillium Web";
+  align-items: left;
+  font-weight: 400;
+  font-size: 16px;
+  color: #000;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.rounded-input {
+  width: 600px; /* Adjust the width */
+  height: 40px; /* Adjust the height */
+  padding: 10px;
+  border: 1px solid #ccc; /* Border color */
+  border-radius: 20px; /* Makes it rounder */
+  outline: none;
+  font-size: 15px; /* Adjust font size */
+  box-sizing: border-box; /* Ensures padding is included in width/height */
+}
