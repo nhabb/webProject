@@ -69,11 +69,12 @@ button:hover
   color: white;
 }
 
-.header
+#top
 {
   font-family: 'Russo One', sans-serif;
   color: #373535; /* Optional: Red to match F1 branding */
   letter-spacing: -1px; /* Optional: Tighten spacing */
+  margin-left: 450px;
 }
 .line
 {
@@ -86,18 +87,22 @@ button:hover
   gap: 1rem;
   margin-top: 15px;
   font-family: "Titillium Web";
-  align-items: left;
+  align-items: "center";
   font-weight: 400;
   font-size: 16px;
   color: #000;
+  text-align: center;
 }
 
 label {
-  display: flex;
+  display: grid;
   flex-direction: column;
+  align-items: center;
 }
 
 .rounded-input {
+  display: grid;
+  place-items: center;
   width: 600px; /* Adjust the width */
   height: 40px; /* Adjust the height */
   padding: 10px;
@@ -106,4 +111,24 @@ label {
   outline: none;
   font-size: 15px; /* Adjust font size */
   box-sizing: border-box; /* Ensures padding is included in width/height */
+  /* margin-left: 500px; */
+}
+
+.submit
+{
+  display: flex;
+  align-items: center;
+  background-color: red;
+  color: white;
+  height: 30px;
+  font-size: 15px;
+  font-family: "titillium Web";
+}
+
+.submit:hover
+{
+  font-family: "titillium Web";
+  background-color: white;
+  color: black;
+  border: 3px solid red;
 }
