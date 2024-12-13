@@ -1,0 +1,31 @@
+body {
+    font-family: Arial Bold, Helvetica;
+    line-height: 1.6;
+}
+.page-body {
+    margin: 50px 100px 0px 100px;
+    
+}
+.big-box {
+    font-weight: bolder;
+    font-size: 60px;
+    font-family: Russo One;
+    border-top-right-radius: 40px;
+    border: 15px solid black;
+    border-left: none;
+    border-bottom: none;
+    margin-bottom: 80px;
+}
+.player-box {
+    height: 400px;
+    width: 30%;
+    border-top-right-radius: 40px;
+    border: 3px solid black;
+    border-left: none;
+    border-bottom: none;
+
+}
+.three-players-box {
+    display: flex;
+    justify-content: space-between;
+}

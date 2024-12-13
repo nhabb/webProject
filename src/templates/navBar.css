@@ -1,0 +1,55 @@
+/* General reset */
+ ul {
+    margin: 0;
+    padding: 0;
+}
+.nav {
+    margin: 0px;
+}
+
+
+/* Navbar styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff0000; 
+    color: white;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar .logo a {
+    color: white;
+    font-size: 24px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    font-family: Russo One;
+    color: white;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    background-color: #333; /* Dark hover effect */
+    border-radius: 5px;
+}
+
+/* Section styling */
+section {
+    padding: 50px;
+    background-color: #f0f0f0;
+    margin: 20px 0;
+}
