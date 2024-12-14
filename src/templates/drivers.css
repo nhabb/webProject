@@ -1,11 +1,4 @@
-body {
-    font-family: Arial Bold, Helvetica;
-    line-height: 1.6;
-}
-.page-body {
-    margin: 50px 100px 0px 100px;
-    
-}
+
 .big-box {
     font-weight: bolder;
     font-size: 60px;
@@ -14,18 +7,77 @@ body {
     border: 15px solid black;
     border-left: none;
     border-bottom: none;
-    margin-bottom: 80px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 0px 30px 80px 35px;
 }
-.player-box {
-    height: 400px;
-    width: 30%;
-    border-top-right-radius: 40px;
-    border: 3px solid black;
+body {
+    font-family: Titillium Web;
+    background-color: white;
+    margin: 150px 200px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 70%;
+  }
+  
+  .player-container {
+    background-color: white;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .player-box {
+    background-color: white;
+
+    border: 6px solid black;
+    border-top-right-radius: 10px;
     border-left: none;
     border-bottom: none;
-
-}
-.three-players-box {
-    display: flex;
-    justify-content: space-between;
-}
+    width: 270px;
+    height: 350px;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+  }
+  
+  .player-box .rank {
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    background: red;
+    color: white;
+    font-size: 20px;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50%;
+    text-align: center;
+    font-family: Russo One;
+  }
+  
+  .player-box .details {
+    margin-bottom: 10px;
+  }
+  
+  .player-box h2 {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .player-box p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .player-box .image img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  

@@ -6,7 +6,12 @@
 .nav {
     margin: 0px;
 }
-
+header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
 
 /* Navbar styles */
 .navbar {
@@ -15,7 +20,7 @@
     align-items: center;
     background-color: #ff0000; 
     color: white;
-    padding: 10px 20px;
+    padding: 25px 150px;
     position: sticky;
     top: 0;
     z-index: 1000;
@@ -40,6 +45,7 @@
     color: white;
     padding: 5px 10px;
     transition: background-color 0.3s ease;
+    font-size: 25px;
 }
 
 .nav-links li a:hover {
@@ -47,9 +53,4 @@
     border-radius: 5px;
 }
 
-/* Section styling */
-section {
-    padding: 50px;
-    background-color: #f0f0f0;
-    margin: 20px 0;
-}
+
