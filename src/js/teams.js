@@ -8,10 +8,7 @@ const teams = [
     { rank: 12, name: "Williams", points: 95, driver1: "Alexander Albon", image: "albon.png", logo: "🇹🇭.png", driver2:"Logan Sargeant"},
     { rank: 14, name: "AlphaTauri", points: 68, driver1: "Yuki Tsunoda", image: "yuki.png", logo: "🇯🇵.png", driver2:"Daniel Ricciardo",reserve:"Liam Lawson"},
     { rank: 15, name: "Haas", points: 52, driver1: "Nico Hülkenberg", image: "hulkenberg.png", logo: "🇩🇪.png", driver2:"Kevin Magnussen"},
-    { rank: 16, name: "Alfa Romeo", points: 45, driver1: "", image: "bottas.png", logo: "🇫🇮.png", driver2:""},
-    { rank: 17, name: "Zhou Guanyu", points: 33, driver1: "Alfa Romeo", image: "zhou.png", logo: "🇨🇳.png", driver2:""},
-    { rank: 22, name: "Felipe Drugovich", points: 10, driver1: "Aston Martin", image: "drugovich.png", logo: "🇧🇷.png", driver2:""},
-    { rank: 24, name: "Oliver Bearman", points: 3, driver1: "Haas", image: "bearman.png", logo: "🇬🇧.png" ,driver2:""}
+    { rank: 16, name: "Alfa Romeo", points: 45, driver1: "Valtteri Bottas", image: "bottas.png", logo: "🇫🇮.png", driver2:"Zhou Guanyu"},
   ];      
 
   teams.forEach(team => {
