@@ -7,22 +7,28 @@
     border: 15px solid black;
     border-left: none;
     border-bottom: none;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 0px 30px 80px 35px;
+    margin-bottom: 80px;
+    padding: 20px 500px 20px 0px;
 }
 body {
     font-family: Titillium Web;
     background-color: white;
-    margin: 150px 200px;
     padding: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     align-items: center;
     min-height: 100vh;
-    width: 70%;
+    width: 100%;
   }
+
+  .all-page {
+    margin: 150px 300px 100px 300px;
+  }
+
+.player-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
   .player-name {
     display: flex;
     justify-content: space-between;
@@ -30,39 +36,41 @@ body {
   }
 
   .player-card {
-    position: relative;
     width: 300px;
     height: 400px;
     background: #fff;
     border-radius: 10px;
-    border: 4px solid black;
+    border: 5px solid black;
     border-bottom: none;
     border-left: none;
     border-top-right-radius: 10px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
     text-align: center;
     overflow: hidden;
+    margin-bottom: 10px;
 }
 
 /* Rank Top Left */
 .rank {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    font-size: 20px;
+    text-align: start;
+    font-size: 30px;
     font-weight: bold;
     color: #000;
 }
-
+.first-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 7px;
+}
 /* Points Top Right */
 .points {
-    position: absolute;
-    top: 10px;
-    right: 10px;
+
     text-align: right;
 }
 
 .points-number {
-    font-size: 24px;
+    font-size: 30px;
     font-weight: bold;
     color: #000;
 }
@@ -73,48 +81,62 @@ body {
     color: #333;
 }
 
-/* Player Info */
-.player-info {
-    margin-top: 50px;
-}
 
 .name-title {
-    font-size: 12px;
-    font-weight: 300;
-    color: #777;
+    font-size: 17px;
+    font-weight: bold;
+    color: black;
+    text-align: start;
 }
 
 .name {
     display: block;
     font-size: 20px;
     font-weight: bold;
-    margin-top: 5px;
     color: #000;
 }
 
-.team-name {
+.team-image img {
+    justify-self: start;
     margin-top: 10px;
-    font-size: 12px;
     color: #777;
+    height: 80px;
+    width: 80px;
 }
 
 .flag img {
-    width: 25px;
+
+    width: 55px;
+    height: 30px;
     margin-top: 5px;
+    margin-right: 15px;
 }
 
 /* Player Image */
 .player-image img {
-    position: absolute;
+    position: relative;
     bottom: 0;
-    width: 100%;
-    height: auto;
+    right: 60px;
+    width: 270px;
+    height: 280px;
 }
+
+.player-image {
+    height: 300px;
+
+}
+
 
 .separator-line {
   width: 100%;
   height: 1px; /* Line thickness */
   background-color: #ccc; /* Grey color */
-  margin: 10px auto; /* Add some spacing */
+  margin: 7px auto; /* Add some spacing */
   border-radius: 1px; /* Slightly rounded edges */
+}
+.images {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+    
 }
