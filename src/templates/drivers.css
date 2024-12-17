@@ -29,6 +29,7 @@ body {
     justify-content: space-between;
 }
 
+
   .player-name {
     display: flex;
     justify-content: space-between;
@@ -49,6 +50,9 @@ body {
     text-align: center;
     overflow: hidden;
     margin-bottom: 10px;
+}
+.player-card a:hover {
+    border-color: red;
 }
 
 /* Rank Top Left */
