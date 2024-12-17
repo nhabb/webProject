@@ -15,6 +15,35 @@ const teams = [
     const box = document.createElement("div");
     box.className = "team-box";
     box.innerHTML = `
+    <div class="first-div">
+        <div class="rank">${team.rank}</div>
+        <div class="pts">${team.points}PTS</div>
+    </div>
+    <div class="separator-line"></div>
+    <div class="">
+        <div class="team-name">${team.name}</div>
+        <div class="team-logo">
+        <img src="${team.logo}" alt="${team.name} logo">
+        </div>
+    </div>
+    <div class="separator-line"></div>
+    <div class="players-names">
+        <div class="driver1">
+        <div class="driver1-name">${team.driver1}</div>
+        <div class="driver1-img">
+        <img src="../images/${team.driver1}.png">
+        </div>
+        </div>
+        <div class="driver2">
+        <div class="driver2-name">${team.driver2}</div>
+        <div class="driver2-img">
+        <img src="../images/${team.driver2}.png">
+        </div>
+        </div>
+    </div>
+
+    
+
 
     `
     
