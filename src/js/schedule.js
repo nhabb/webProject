@@ -2,29 +2,29 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("player-container");
   
     const Races = [
-        { rank: 1, name: "Max ",image: "max.png", country: "NL.png", date: },
-        { rank: 2, name: "Lando ",image: "norris.png", country: "UK.png", date: },
-        { rank: 3, name: "Charles ",image: "charles.png", country: "MC.png", date: },
-        { rank: 4, name: "Oscar ",image: "piastry.png", country: "au.png", date: },
-        { rank: 5, name: "Carlos ",image: "carlos.png", country: "es.png", date: },
-        { rank: 6, name: "George ",image: "russel.png", country: "uk.png", date: },
-        { rank: 7, name: "Lewis ",image: "hamilton.png", country: "uk.png", date: },
-        { rank: 8, name: "Sergio ",image: "perez.png", country: "mx.png", date: },
-        { rank: 9, name: "Fernando ",image: "alonso.png", country: "es.png", date: },
-        { rank: 10, name: "Pierre ",image: "gasly.png", country: "fr.png", date: },
-        { rank: 11, name: "Nico ",image: "hulkenberg.png", country: "dk.png", date: },
-        { rank: 12, name: "Yuki ",image: "yuki.png", country: "jp.png", date: },
-        { rank: 13, name: "Lance ",image: "stroll.png", country: "Cn.png", date: },
-        { rank: 14, name: "Esteban ",image: "doohan.png", country: "fr.png", date: },
-        { rank: 15, name: "Kevin ",image: "magnusen.png", country: "dk.png", date: },
-        { rank: 16, name: "Alexander ",image: "albon.png", country: "th.png", date: },
-        { rank: 16, name: "Alexander ",image: "albon.png", country: "th.png", date: },
-        { rank: 16, name: "Alexander ",image: "albon.png", country: "th.png", date: },
-        { rank: 16, name: "Alexander ",image: "albon.png", country: "th.png", date: },
-        { rank: 16, name: "Alexander ",image: "albon.png", country: "th.png", date: },
-        { rank: 16, name: "Alexander ",image: "albon.png", country: "th.png" , date:},
-        { rank: 16, name: "Alexander ",image: "albon.png", country: "th.png" , date:},
-        { rank: 16, name: "Alexander ",image: "albon.png", country: "th.png" , date:},
+        { round: "TESTING", name: "Sakhir",image: "max.png", country: "bah.png", date:"21-23/2" },
+        { round: 1, name: "Bahrain",image: "norris.png", country: "bah.png", date:"2/3" },
+        { round: 2, name: "Saudi Arabia",image: "charles.png", country: "KSA.png", date: "9/3" },
+        { round: 3, name: "Australia",image: "piastry.png", country: "au.png", date: "24/3"},
+        { round: 4, name: "Japan",image: "carlos.png", country: "jp.png", date: "7/4"},
+        { round: 6, name: "China",image: "russel.png", country: "Ch.png", date: "21/4"},
+        { round: 7, name: "Miami",image: "hamilton.png", country: "us.png", date:"5/5" },
+        { round: 8, name: "Imola",image: "perez.png", country: "italy.png", date: "19/5"},
+        { round: 9, name: "Monaco",image: "alonso.png", country: "Mc.png", date: "26/5"},
+        { round: 10, name: "Canada",image: "gasly.png", country: "ca.png", date:"9/6" },
+        { round: 11, name: "Spain",image: "hulkenberg.png", country: "es.png", date: "23/6"},
+        { round: 12, name: "Austria",image: "yuki.png", country: "aus.png", date:"30/6" },
+        { round: 13, name: "Great Britain",image: "stroll.png", country: "Uk.png", date: "7/7"},
+        { round: 14, name: "Hungary",image: "doohan.png", country: "hg.png", date: "21/7"},
+        { round: 15, name: "Belguim",image: "magnusen.png", country: "dk.png", date: },
+        { round: 16, name: "Alexander ",image: "albon.png", country: "th.png", date: },
+        { round: 16, name: "Alexander ",image: "albon.png", country: "th.png", date: },
+        { round: 16, name: "Alexander ",image: "albon.png", country: "th.png", date: },
+        { round: 16, name: "Alexander ",image: "albon.png", country: "th.png", date: },
+        { round: 16, name: "Alexander ",image: "albon.png", country: "th.png", date: },
+        { round: 16, name: "Alexander ",image: "albon.png", country: "th.png" , date:},
+        { round: 16, name: "Alexander ",image: "albon.png", country: "th.png" , date:},
+        { round: 16, name: "Alexander ",image: "albon.png", country: "th.png" , date:},
       ];      
   
   
@@ -33,7 +33,7 @@ document.addEventListener("DOMContentLoaded", () => {
       card.className = "player-card";
       card.innerHTML = `
       <div class="first-div">
-        <div class="rank">${player.rank}</div>
+        <div class="round">${player.round}</div>
             <div class="points">
                 <span class="points-number">${player.points}</span>
                 <span class="pts">PTS</span>
