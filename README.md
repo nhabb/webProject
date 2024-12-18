@@ -25,11 +25,11 @@ To run or view the project, you need:
 
 1. Clone the repository from GitHub:
    ```bash
-   git clone https://github.com/yourusername/f1-page.git
+   git clone https://github.com/nhabb/webProject.git
    ```
 2. Navigate to the project folder:
    ```bash
-   cd f1-page
+   cd webProject
    ```
 3. Open `index.html` in a web browser to view the project.
 
@@ -45,7 +45,7 @@ No additional setup or server is required.
 ## Project Structure
 
 ```
-F1 Page/
+webProject/
 ├── index.html       # Main HTML file
 ├── styles/
 │   └── style.css    # CSS file for styling
