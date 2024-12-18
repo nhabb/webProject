@@ -11,7 +11,7 @@
 }
 body {
     font-family: Titillium Web;
-    background-color: white;
+    background-color: #f8f4f1;
     padding: 0;
     align-items: center;
     min-height: 100vh;
@@ -27,8 +27,8 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
 }
-.team-card {
-    width: 600px;
+.team-box {
+    width: 625px;
     height: 400px;
     background: #fff;
     border-radius: 10px;
@@ -42,6 +42,12 @@ body {
     overflow: hidden;
     margin-bottom: 10px;
 }
+
+.team-box:hover {
+  border-color: blue;
+  border-width: 6px;
+}
+
 .separator-line {
     width: 100%;
     height: 1px; /* Line thickness */
@@ -49,3 +55,122 @@ body {
     margin: 7px auto; /* Add some spacing */
     border-radius: 1px; /* Slightly rounded edges */
   }
+.driver1-img img {
+  height: 65px;
+  width: 70px;
+  padding: 0;
+  margin: 0;
+} 
+.driver1-img img:hover {
+  height:80px;
+  width: 80px;
+} 
+
+.driver2-img img {
+  height:65px;
+  width: 70px;
+}  
+
+.driver2-img img:hover {
+  height:80px;
+  width: 80px;
+} 
+
+.first-div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: 10px;
+  font-size: 35px;
+  font-weight: bolder;
+  height: 50px;
+  align-items: center;
+
+}
+.second-div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 26px;
+  font-weight: bold;
+  align-items: center;
+}
+.third-div {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 26px;
+  font-weight: bold;
+}
+.team-logo img {
+  height: 70px;
+  width: 70px;
+}
+
+.team-logo img:hover {
+  height: 80px;
+  width: 80px;
+}
+
+.driver1 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 220px;
+  align-items: end;
+  height: 80px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-left: none;
+
+}
+
+.driver1:hover {
+  border-color: green;
+}
+
+.driver2 {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  width: 200px;
+  align-items: end;
+  height: 80px;
+  border-bottom-right-radius: 10px;
+  border: 1px solid #ccc;
+  border-top: none;
+  border-left: none;
+}
+
+.driver2:hover {
+  border-color: green;
+}
+
+.driver1-name {
+  padding-bottom: 7px;
+  text-align: left;
+  line-height: 1;
+  
+} 
+
+.driver2-name {
+  padding-bottom: 7px;
+  text-align: left;
+  line-height: 1;
+}
+.first1 {
+  font-size: 16px;
+  color: #ccc;
+  margin: 0;
+  padding: 0;
+} 
+.first2 {
+  font-size: 16px;
+  color: #ccc;
+}

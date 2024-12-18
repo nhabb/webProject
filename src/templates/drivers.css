@@ -87,17 +87,21 @@ body {
     color: #333;
 }
 
+.player-dets {
+    text-align: left;
+    padding-left: 6px;
+}
 
 .name-title {
-    font-size: 17px;
+    font-size: 16px;
     font-weight: bold;
-    color: black;
+    color: #ccc;
     text-align: start;
 }
 
 .name {
     display: block;
-    font-size: 20px;
+    font-size: 24px;
     font-weight: bold;
     color: #000;
 }
