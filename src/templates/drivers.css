@@ -34,7 +34,8 @@ body {
   .player-name {
     display: flex;
     justify-content: space-between;
-
+    height: 60px;
+    align-items: center;
   }
 
   .player-card {
@@ -90,6 +91,8 @@ body {
 .player-dets {
     text-align: left;
     padding-left: 6px;
+  line-height: 1;
+
 }
 
 .name-title {
