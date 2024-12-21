@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("player-container");
   
     const Races = [
-        { round: "TESTING", name: "Sakhir",image: "max.png", country: "bah.png", date:"21-23/2" },
-        { round: 1, name: "Bahrain",image: "norris.png", country: "bah.png", date:"2/3" },
-        { round: 2, name: "Saudi Arabia",image: "charles.png", country: "KSA.png", date: "9/3" },
+        { round: "TESTING", name: "Sakhir",image: "max.png", country: "bah.png", date:"21-23" },
+        { round: 1, name: "Bahrain",image: "norris.png", country: "bah.png", date:"29-02" },
+        { round: 2, name: "Saudi Arabia",image: "charles.png", country: "KSA.png", date: "07-09" },
         { round: 3, name: "Australia",image: "piastry.png", country: "au.png", date: "24/3"},
         { round: 4, name: "Japan",image: "carlos.png", country: "jp.png", date: "7/4"},
         { round: 6, name: "China",image: "russel.png", country: "Ch.png", date: "21/4"},
@@ -17,14 +17,17 @@ document.addEventListener("DOMContentLoaded", () => {
         { round: 13, name: "Great Britain",image: "stroll.png", country: "Uk.png", date: "7/7"},
         { round: 14, name: "Hungary",image: "doohan.png", country: "hg.png", date: "21/7"},
         { round: 15, name: "Belguim",image: "magnusen.png", country: "dk.png", date: },
-        { round: 16, name: "Alexander ",image: "albon.png", country: "th.png", date: },
-        { round: 16, name: "Alexander ",image: "albon.png", country: "th.png", date: },
-        { round: 16, name: "Alexander ",image: "albon.png", country: "th.png", date: },
-        { round: 16, name: "Alexander ",image: "albon.png", country: "th.png", date: },
-        { round: 16, name: "Alexander ",image: "albon.png", country: "th.png", date: },
-        { round: 16, name: "Alexander ",image: "albon.png", country: "th.png" , date:},
-        { round: 16, name: "Alexander ",image: "albon.png", country: "th.png" , date:},
-        { round: 16, name: "Alexander ",image: "albon.png", country: "th.png" , date:},
+        { round: 16, name: "Netherlands",image: "al.png", country: "NL.png", date: "28/8"},
+        { round: 16, name: "Italy",image: "albon.png", country: "It.png", date: "01/9"},
+        { round: 16, name: "Azerbaijan",image: "albon.png", country: "Az.png", date: "15/9"},
+        { round: 16, name: "Singapore",image: "albon.png", country: "SP.png", date: "22/9"},
+        { round: 16, name: "United States",image: "albon.png", country: "th.png", date: "20/10" },
+        { round: 16, name: "Mexico",image: "albon.png", country: "MX.png" , date:"27/10"},
+        { round: 16, name: "Brazil",image: "albon.png", country: "BZ.png" , date:"3/11"},
+        { round: 16, name: "Las Vegas",image: "albon.png", country: "US.png" , date: "23/11"},
+        { round: 16, name: "Qatar",image: "albon.png", country: "QUATAR.png" , date: "01/12"},
+        { round: 16, name: "Abu Dhabi",image: "albon.png", country: "UAE.png" , date: "06-08"},
+
       ];      
   
   
