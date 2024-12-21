@@ -57,9 +57,9 @@ document.addEventListener("DOMContentLoaded", () => {
                 </div>
             <div class="player-image">
             <img src="../Images/${player.image}" alt="${player.name} Image">
-                </div>
-            </div>
-        </div>
+              </div>
+          </div>
+      </div>
       `;
       container.appendChild(card);
     });
