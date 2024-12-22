@@ -39,7 +39,7 @@ body {
 
 .race-card {
     height: 400px;
-    width: 350px;
+    width: 400px;
     background: #f5f5f5;
     border-radius: 10px;
     border: 3px solid black;
@@ -80,7 +80,7 @@ body {
 .race-details .flag img {
     position: absolute;
     bottom: 170px;
-    left: 260px;
+    left: 300px;
     width: 55px;
     height: 30px;
     align-self: flex-end;
@@ -107,14 +107,13 @@ body {
     width: 80px;
 }
 .race-details .photo{
-    max-width: 80%;  
-    
+    max-width: 80%; 
 }
 
 .race-details .driver-image img {
     position: absolute;
     top : 210px;
-    right: 50px;
+    right: 70px;
     width: 270px;
     height: 280px;
 }
