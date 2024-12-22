@@ -2,31 +2,31 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("race-container");
 
   const Races = [
-      { round: "TESTING", name: "Sakhir", image: "sakhir.png", country: "bah.png", date: "21-23" },
-      { round: 1, name: "Bahrain", image: "max.png", country: "bah.png", date: "29-02" },
-      { round: 2, name: "Saudi Arabia", image: "max.png", country: "KSA.png", date: "07-09" },
-      { round: 3, name: "Australia", image: "carlos.png", country: "au.png", date: "22-24" },
-      { round: 4, name: "Japan", image: "max.png", country: "jp.png", date: "05-07" },
-      { round: 5, name: "China", image: "max.png", country: "Ch.png", date: "19-21" },
-      { round: 6, name: "Miami", image: "lado.png", country: "us.png", date: "03-05" },
-      { round: 7, name: "Imola", image: "max.png", country: "italy.png", date: "17-19" },
-      { round: 7, name: "Monaco", image: "leclerc.png", country: "Mc.png", date: "24-26" },
-      { round: 8, name: "Canada", image: "max.png", country: "ca.png", date: "07-09" },
-      { round: 9, name: "Spain", image: "max.png", country: "es.png", date: "21-23" },
-      { round: 10, name: "Austria", image: "georges.png", country: "aus.png", date: "28-30" },
-      { round: 11, name: "Great Britain", image: "hamilton.png", country: "Uk.png", date: "05-07" },
-      { round: 12, name: "Hungary", image: "piastry.png", country: "hg.png", date: "19-21" },
-      { round: 13, name: "Belgium", image: "hamilton.png", country: "dk.png", date: "26-28" },
-      { round: 14, name: "Netherlands", image: "lando.png", country: "NL.png", date: "23-25" },
-      { round: 15, name: "Italy", image: "leclerc.png", country: "It.png", date: "30-01" },
-      { round: 16, name: "Azerbaijan", image: "piastry.png", country: "Az.png", date: "13-15" },
-      { round: 17, name: "Singapore", image: "lnado.png", country: "SP.png", date: "20-22" },
-      { round: 18, name: "United States", image: "leclerc.png", country: "th.png", date: "18-20" },
-      { round: 19, name: "Mexico", image: "carlos.png", country: "MX.png", date: "25-27" },
-      { round: 20, name: "Brazil", image: "max.png", country: "BZ.png", date: "01-03" },
-      { round: 21, name: "Las Vegas", image: "george.png", country: "US.png", date: "21-23" },
-      { round: 22, name: "Qatar", image: "max.png", country: "QUATAR.png", date: "29-01" },
-      { round: 23, name: "Abu Dhabi", image: "lando.png", country: "UAE.png", date: "06-08" }
+      { round: "TESTING", name: "Sakhir", image: "sakhir.png", country: "bah.png", date: "21-23",month:"FEB",img:"date.png" },
+      { round: 1, name: "Bahrain", image: "verstappen.png", country: "bah.png", date: "29-02",month:"FEB-MAR",img:"date.png" },
+      { round: 2, name: "Saudi Arabian", image: "verstappen.png", country: "KSA.png", date: "07-09",month:"MAR",img: "date.png" },
+      { round: 3, name: "Australian", image: "sainz.png", country: "au.png", date: "22-24",month:"MAR",img: "date.png" },
+      { round: 4, name: "Japanese", image: "verstappen.png", country: "jp.png", date: "05-07",month:"APR",img: "date.png" },
+      { round: 5, name: "Chinese", image: "verstappen.png", country: "Ch.png", date: "19-21",month: "APR",img: "date.png"},
+      { round: 6, name: "Miami", image: "norris.png", country: "us.png", date: "03-05",month: "MAY",img: "date.png"},
+      { round: 7, name: "Imola", image: "verstappen.png", country: "it.png", date: "17-19" ,month:"MAY",img: "date.png"},
+      { round: 7, name: "Monaco", image: "leclerc.png", country: "Mc.png", date: "24-26",month: "MAY",img: "date.png"},
+      { round: 8, name: "Canadian", image: "verstappen.png", country: "cn.png", date: "07-09",month:"JUN",img: "date.png" },
+      { round: 9, name: "Spanish", image: "verstappen.png", country: "es.png", date: "21-23",month: "JUN",img: "date.png"},
+      { round: 10, name: "Austrian", image: "russell.png", country: "aus.png", date: "28-30",month: "JUN",img: "date.png"},
+      { round: 11, name: "British", image: "hamilton.png", country: "Uk.png", date: "05-07",month: "JUL",img: "date.png"},
+      { round: 12, name: "Hungarian", image: "piastri.png", country: "hg.png", date: "19-21",month: "JUL",img: "date.png"},
+      { round: 13, name: "Belgium", image: "hamilton.png", country: "dk.png", date: "26-28",month: "JUL",img: "date.png"},
+      { round: 14, name: "Netherlands", image: "norris.png", country: "NL.png", date: "23-25",month: "AUG",img: "date.png"},
+      { round: 15, name: "Italian", image: "leclerc.png", country: "It.png", date: "30-01",month: "AUG-SEP",img: "date.png"},
+      { round: 16, name: "Azerbaijan", image: "piastri.png", country: "Az.png", date: "13-15",month: "SEP",img: "date.png"},
+      { round: 17, name: "Singapore", image: "norris.png", country: "SP.png", date: "20-22",month: "SEP",img: "date.png"},
+      { round: 18, name: "United States", image: "leclerc.png", country: "th.png", date: "18-20",month: "OCT",img: "date.png"},
+      { round: 19, name: "Mexican", image: "sainz.png", country: "MX.png", date: "25-27" ,month: "OCT",img: "date.png"},
+      { round: 20, name: "Brazilian", image: "verstappen.png", country: "Br.png", date: "01-03",month: "NOV",img: "date.png"},
+      { round: 21, name: "Las Vegas", image: "russell.png", country: "US.png", date: "21-23",month: "NOV",img: "date.png"},
+      { round: 22, name: "Qatar", image: "verstappen.png", country: "qa.png", date: "29-01",month: "NOV-DEC",img: "date.png"},
+      { round: 23, name: "Abu Dhabi", image: "norris.png", country: "UAE.png", date: "06-08" ,month: "DEC",img: "date.png"}
   ];
 
   Races.forEach(race => {
@@ -34,14 +34,19 @@ document.addEventListener("DOMContentLoaded", () => {
       card.className = "race-card";
       card.innerHTML = `
           <div class="race-details">
-              <div class="round">Round: ${race.round}</div>
-              <div class="name">Name: ${race.name}</div>
-              <div class="date">Date: ${race.date}</div>
+              <div class="round">${race.round}</div>
+            <div class="separator-line"></div>
+              <div class="name">${race.name} GP</div>
+              <div class="date">${race.date}</div>
               <div class="flag">
-                  <img src="../Images/${race.country}" alt="${race.name} Flag">
+                  <img src="../Images/${race.country}" alt="${race.name}">
+              </div>
+              <div class= "month">${race.month}</div>
+              <div class="photo">
+                  <img src="../Images/${race.img}" alt="${race.img}">
               </div>
               <div class="driver-image">
-                  <img src="../Images/${race.image}" alt="${race.name} winner">
+                  <img src="../Images/${race.image}" alt="${race.image} winner">
               </div>
           </div>
       `;

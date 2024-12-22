@@ -2,9 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("team-container");
 
     const teams = [
-        { rank: 1, name: "McLaren", points: 666, driver1: "Norris", driver1First:"Lando", image: "mc-car.png", logo: "mc-logo.png", driver2: "Piastri", driver2First:"Oscar", },
-        { rank: 2, name: "Ferrari", points: 652, driver1: "Leclerc", driver1First:"Charles", image: "fer-car.png", logo: "fer-logo.png", driver2: "Sainz", driver2First:"Carlos" },
-        { rank: 3, name: "Red Bull Racing", points: 589, driver1: "Verstappen", driver1First:"Max", image: "rbb-car.png", logo: "red-bull-racing-logo.png", driver2: "Perez", driver2First:"Sergio" },
+        { rank: 1, name: "McLaren", points: 666, driver1: "Norris", driver1First:"norris", image: "mc-car.png", logo: "mc-logo.png", driver2: "Piastri", driver2First:"Oscar", },
+        { rank: 2, name: "Ferrari", points: 652, driver1: "Leclerc", driver1First:"Charles", image: "fer-car.png", logo: "fer-logo.png", driver2: "Sainz", driver2First:"sainz" },
+        { rank: 3, name: "Red Bull Racing", points: 589, driver1: "Verstappen", driver1First:"verstappen", image: "rbb-car.png", logo: "red-bull-racing-logo.png", driver2: "Perez", driver2First:"Sergio" },
         { rank: 4, name: "Mercedes", points: 468, driver1: "Hamilton", driver1First:"Lewis", image: "mer-car.png", logo: "mer-logo.png", driver2: "Russell", driver2First:"George" },
         { rank: 5, name: "Aston Martin", points: 94, driver1: "Alonso", driver1First:"Fernando", image: "am-car.png", logo: "am-logo.png", driver2: "Stroll", driver2First:"Lance" },
         { rank: 6, name: "Alpine", points: 65, driver1: "Doohan", driver1First:"Jack", image: "alp-car.png", logo: "alp-logo.png", driver2: "Ocon", driver2First:"Esteban" },

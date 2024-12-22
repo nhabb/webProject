@@ -33,9 +33,9 @@ body {
 .team-box {
     width: 625px;
     height: 400px;
-    background: var(--bg-color);
+    background-color: #f5f5f5;
     border-radius: 10px;
-    border: 5px solid black;
+    border: 3px solid black;
     border-bottom: none;
     border-left: none;
     border-top-right-radius: 10px;
@@ -44,11 +44,12 @@ body {
     text-align: center;
     overflow: hidden;
     margin-bottom: 10px;
+    transition: transform 0.5s, border-color 0.5s;
 }
 
 .team-box:hover {
-  border-top: 7px solid blue;
-  border-right: 7px solid blue;
+  transform: scale(1.05); /* Enlarge on hover */
+  border-color: blue; /* Highlight border */
 }
 
 .separator-line {
