@@ -2,11 +2,11 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("player-container");
   
     const players = [
-        { rank: 1, name: "verstappen ", lastName: "Verstappen", points: 437, team: "red-bull-racing-logo.png", image: "verstappen.png", country: "NL.png" },
-        { rank: 2, name: "norris ", lastName: "Norris", points: 374, team: "mc-logo.png", image: "norris.png", country: "UK.png" },
+        { rank: 1, name: "Max ", lastName: "Verstappen", points: 437, team: "red-bull-racing-logo.png", image: "verstappen.png", country: "NL.png" },
+        { rank: 2, name: "Lando", lastName: "Norris", points: 374, team: "mc-logo.png", image: "norris.png", country: "UK.png" },
         { rank: 3, name: "Charles ", lastName: "Leclerc", points: 356, team: "fer-logo.png", image: "leclerc.png", country: "MC.png" },
         { rank: 4, name: "Oscar ", lastName: "Piastri", points: 292, team: "mc-logo.png", image: "piastri.png", country: "au.png" },
-        { rank: 5, name: "sainz ", lastName: "Sainz", points: 290, team: "fer-logo.png", image: "sainz.png", country: "es.png" },
+        { rank: 5, name: "Carlos ", lastName: "Sainz", points: 290, team: "fer-logo.png", image: "sainz.png", country: "es.png" },
         { rank: 6, name: "George ", lastName: "Russell", points: 245, team: "mer-logo.png", image: "russell.png", country: "uk.png" },
         { rank: 7, name: "Lewis ", lastName: "Hamilton", points: 223, team: "mer-logo.png", image: "hamilton.png", country: "uk.png" },
         { rank: 8, name: "Sergio ", lastName: "Perez", points: 152, team: "red-bull-racing-logo.png", image: "perez.png", country: "mx.png" },
