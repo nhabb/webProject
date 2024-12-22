@@ -1,5 +1,4 @@
-
-.big-box {
+.big-container {
     font-weight: bolder;
     font-size: 60px;
     font-family: Russo One;
@@ -21,24 +20,24 @@ body {
     width: 100%;
   }
 
-  .all-page {
+  .page-wrapper {
     margin: 150px 300px 100px 300px;
   }
 
-.player-container {
+.race-wrapper {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
 }
 
 
-  .player-name {
+  .player-info {
     display: flex;
     justify-content: space-between;
 
   }
 
-  .player-card {
+  .race-box {
     width: 300px;
     height: 400px;
     background: #fff;
@@ -53,57 +52,57 @@ body {
     overflow: hidden;
     margin-bottom: 10px;
 }
-.player-card:hover {
+.player-box:hover {
     border-color: red;
     border-width: 2px;
 }
 
 /* Rank Top Left */
-.rank {
+.rank-label {
     text-align: start;
     font-size: 30px;
     font-weight: bold;
     color: #000;
 }
-.first-div {
+.header-section {
     display: flex;
     justify-content: space-between;
     margin: 7px;
 }
 /* Points Top Right */
-.points {
+.score-section {
 
     text-align: right;
 }
 
-.points-number {
+.score-number {
     font-size: 30px;
     font-weight: bold;
     color: #000;
 }
 
-.pts {
+.score-unit {
     font-size: 12px;
     font-weight: bold;
     color: #333;
 }
 
 
-.name-title {
+.title-name {
     font-size: 17px;
     font-weight: bold;
     color: black;
     text-align: start;
 }
 
-.name {
+.display-name {
     display: block;
     font-size: 20px;
     font-weight: bold;
     color: #000;
 }
 
-.team-image img {
+.team-logo img {
     justify-self: start;
     margin-top: 10px;
     color: #777;
@@ -111,7 +110,7 @@ body {
     width: 80px;
 }
 
-.flag img {
+.country-flag img {
 
     width: 55px;
     height: 30px;
@@ -120,7 +119,7 @@ body {
 }
 
 /* Player Image */
-.player-image img {
+.player-photo img {
     position: relative;
     bottom: 0;
     right: 60px;
@@ -128,21 +127,22 @@ body {
     height: 280px;
 }
 
-.player-image {
+.player-photo {
     height: 300px;
 
 }
 
 
-.separator-line {
+.divider-line {
   width: 100%;
   height: 1px; /* Line thickness */
   background-color: #ccc; /* Grey color */
   margin: 7px auto; /* Add some spacing */
   border-radius: 1px; /* Slightly rounded edges */
 }
-.images {
+.picture-section {
     display: flex;
     justify-content: space-between;
     gap: 50px;
 }
+

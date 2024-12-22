@@ -58,7 +58,7 @@ body {
 
 .player-card:hover {
     border-color: red;
-    border-top: 6px;
+    /* border-top: 6px; */
 }
 
 /* Rank Top Left */
