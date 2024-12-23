@@ -53,3 +53,5 @@ document.addEventListener("DOMContentLoaded", () => {
       container.appendChild(card);
   });
 });
+
+window.location.href = "news.html";
