@@ -55,7 +55,7 @@ body {
 
 .race-card:hover {
     transform: scale(1.05); /* Enlarge on hover */
-    border-color: red; /* Highlight border */
+    border-color: #C0C0C0; /* Highlight border */
 }
 
 .race-details {
