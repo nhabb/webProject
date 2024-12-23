@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", () => {
       { round: 11, name: "Austrian", image: "russell.png", country: "aus.png", date: "28-30",month: "JUN",img: "date.png"},
       { round: 12, name: "British", image: "hamilton.png", country: "Uk.png", date: "05-07",month: "JUL",img: "date.png"},
       { round: 13, name: "Hungarian", image: "piastri.png", country: "hg.png", date: "19-21",month: "JUL",img: "date.png"},
-      { round: 14, name: "Belgium", image: "hamilton.png", country: "dk.png", date: "26-28",month: "JUL",img: "date.png"},
+      { round: 14, name: "Belgium", image: "hamilton.png", country: "belg.png", date: "26-28",month: "JUL",img: "date.png"},
       { round: 15, name: "Netherlands", image: "norris.png", country: "NL.png", date: "23-25",month: "AUG",img: "date.png"},
       { round: 16, name: "Italian", image: "leclerc.png", country: "It.png", date: "30-01",month: "AUG-SEP",img: "date.png"},
       { round: 17, name: "Azerbaijan", image: "piastri.png", country: "Az.png", date: "13-15",month: "SEP",img: "date.png"},
