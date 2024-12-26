@@ -2,7 +2,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const container = document.getElementById("race-container");
 
   const Races = [
-      { round: "TESTING", name: "Sakhir", image: "sakhir.png", country: "bah.png", date: "21-23",month:"FEB",img:"date.png" },
       { round: 1, name: "Bahrain", image: "verstappen.png", country: "bah.png", date: "29-02",month:"FEB-MAR",img:"date.png" },
       { round: 2, name: "Saudi Arabian", image: "verstappen.png", country: "KSA.png", date: "07-09",month:"MAR",img: "date.png" },
       { round: 3, name: "Australian", image: "sainz.png", country: "au.png", date: "22-24",month:"MAR",img: "date.png" },
@@ -54,4 +53,4 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-window.location.href = "news.html";
+// window.location.href = "news.html";

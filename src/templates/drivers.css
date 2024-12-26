@@ -60,7 +60,7 @@ body {
 .player-card:hover {
     border-color: red;
     transform: scale(1.05); /* Slightly enlarge on hover */
-  
+    cursor: pointer;
 }
 
 /* Rank Top Left */
@@ -122,11 +122,12 @@ body {
     color: #777;
     height: 80px;
     width: 80px;
+    transition: transform 0.5s, border-color 0.5s;
 }
 
 .team-image img:hover {
-    height: 90px;
-    width: 90px;  
+    transform: scale(1.3); /* Enlarge on hover */
+    cursor: pointer;
 }
 .flag img {
 
@@ -134,10 +135,11 @@ body {
     height: 30px;
     margin-top: 5px;
     margin-right: 15px;
+    transition: transform 0.5s, border-color 0.5s;
 }
 .flag img:hover {
-    width: 65px;
-    height: 40px;
+    transform: scale(1.2); /* Enlarge on hover */
+    cursor: pointer;
 }
 
 /* Player Image */
@@ -151,7 +153,6 @@ body {
 
 .player-image {
     height: 300px;
-
 }
 
 

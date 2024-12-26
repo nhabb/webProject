@@ -77,6 +77,13 @@ body {
     text-align: left;
 }
 
+.race-details .round:hover
+{
+    transition: transform 0.5s, border-color 0.5s;
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
 .race-details .flag img {
     position: absolute;
     bottom: 170px;
@@ -87,6 +94,14 @@ body {
     margin-top: 5px;
     margin-right: 15px;
     align-items: right;
+    transition: transform 0.5s, border-color 0.5s;
+}
+
+.race-details .flag img:hover
+{
+    transform: scale(1.3); /* Enlarge on hover */
+    cursor: pointer;
+
 }
 
 .race-details .date {
