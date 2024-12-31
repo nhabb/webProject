@@ -65,6 +65,7 @@ src/
 │   ├── schedule.css  # Styling for schedule page
 │   └── teams.css     # Styling for team details
 └── videos/           # Folder for video assets
+```
 
 
 ## Features
