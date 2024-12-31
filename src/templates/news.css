@@ -1,4 +1,83 @@
-body{
-    background-color: var(--bg-color);
+body {
+  display: flex;            /* Enables Flexbox on the body */
+  justify-content: center;  /* Centers horizontally */
+  align-items: center;      /* Centers vertically */
+  height: 100vh;            /* Sets the body height to the full viewport */
+  margin: 0;                /* Removes default margin */
+  background-color: var(--bg-color);
+  box-sizing: border-box;   /* Optional: set a background color for the page */
 }
 
+.striped-box {
+  width: 80%;
+  height: 100px;
+  background: repeating-linear-gradient(
+    135deg,
+    #e0e0e0,
+    #e0e0e0 1px, /* Stripe thickness */
+    transparent 2px,
+    transparent 10px /* Space between stripes */
+  );
+  border-radius: 1px;
+  margin-left: 130px;
+  margin-top: 15px;
+  /* margin-right: 50px; */
+}
+
+.news-box
+{
+        display: flex;
+        flex-direction: column;  /* Stack children vertically */
+        justify-content: flex-end; /* Push children to the bottom */
+        margin-top: 350px;
+        margin-bottom: 60px;
+        margin-left: 130px;
+        height: 167px;
+        width: 500px;
+        background: var(--bg-color);
+        border-radius: 10px;
+        border: 1px solid grey;
+        border-top: none;
+        border-left: none;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+        text-align: center;
+        /* overflow: hidden; */
+        transition: transform 0.5s, border-color 0.5s;
+         overflow: visible;
+         z-index: 5; 
+
+}
+
+.news-box p
+{
+    font-family: "titilluim web";
+    align-self: flex-end;
+    text-align: left; 
+    margin-bottom: 50px;
+    padding: 0;
+}
+
+.news-box h3
+{
+    margin-bottom: 20px;
+    font-family: russo one;
+    color: red;
+    font-size: 20px;
+    text-align: left;
+}
+
+.news-box:hover
+{
+    border-color: red;
+}
+#test {
+  /* position: absolute; Allows the image to overlap other elements */
+   z-index: 10;        
+  top: 0;             
+  left: 0;
+   width: auto;       
+   height: auto;      
+}
