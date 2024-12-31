@@ -63,4 +63,6 @@ webProject/
 
 While there are no standout features, the project adheres to clean and organized code practices.
 
+## License
+
 This project is intended for educational purposes only. It may be used, modified, and shared for non-commercial, educational activities. Commercial use or redistribution of this project is prohibited without prior permission.
