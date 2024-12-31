@@ -45,16 +45,27 @@ No additional setup or server is required.
 ## Project Structure
 
 ```
-webProject/
-├── index.html       # Main HTML file
-├── styles/
-│   └── style.css    # CSS file for styling
-├── scripts/
-│   └── script.js    # JavaScript file for functionality
-└── assets/
-    ├── images/      # Folder for images
-    └── data/        # Any data files (e.g., JSON)
-```
+src/
+├── images/           # Folder for image files
+├── js/               # Folder for JavaScript files
+│   ├── drivers.js    # Handles driver-related functionality
+│   ├── schedule.js   # Manages scheduling data and interactions
+│   └── teams.js      # Manages team-related features
+├── static/           # Static files such as reusable assets
+│   ├── drivers.html  # Driver information page
+│   ├── news.html     # News section
+│   ├── schedule.html # Schedule page
+│   └── teams.html    # Team details page
+├── templates/        # CSS templates for various pages
+│   ├── drivers.css   # Styling for the drivers page
+│   ├── globals.css   # Global styling rules
+│   ├── login.css     # Styling for the login page
+│   ├── navBar.css    # Styling for navigation bar
+│   ├── news.css      # Styling for news section
+│   ├── schedule.css  # Styling for schedule page
+│   └── teams.css     # Styling for team details
+└── videos/           # Folder for video assets
+
 
 ## Features
 
