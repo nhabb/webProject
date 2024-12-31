@@ -63,7 +63,4 @@ webProject/
 
 While there are no standout features, the project adheres to clean and organized code practices.
 
-## License
-
-This project is licensed under the MIT License. You are free to use, modify, and distribute it as per the license terms.
-
+This project is intended for educational purposes only. It may be used, modified, and shared for non-commercial, educational activities. Commercial use or redistribution of this project is prohibited without prior permission.
