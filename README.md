@@ -31,7 +31,7 @@ To run or view the project, you need:
    ```bash
    cd webProject
    ```
-3. Open `index.html` in a web browser to view the project.
+3. Open `news.html` in a web browser to view the project.
 
 ## Usage
 

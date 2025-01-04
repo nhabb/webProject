@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,17 +8,19 @@
     <link rel="stylesheet" href="../templates/globals.css">
     <link href="../templates/news.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap"
+        rel="stylesheet">
     <link rel="icon" type="image/png" href="../images/f1_icon.png">
 
 
     <title>News</title>
 </head>
+
 <body>
     <header class="nav">
         <nav class="navbar">
             <div class="logo">
-                <a href="../static/news.html"><img  src="../images/f1_logo.png" alt="F1 Logo"></a>
+                <a href="../static/news.html"><img src="../images/f1_logo.png" alt="F1 Logo"></a>
             </div>
             <ul class="nav-links">
                 <li><a>News</a></li>
@@ -26,24 +29,48 @@
                 <li><a href="teams.html">Teams</a></li>
             </ul>
         </nav>
-        <div class="news-page">
-            <div class="striped-box"></div>
-                <div class="news-box">
-                    <img id="test" src="../images/n1.png">
-                    <h3>NEWS</h3>
-                    <p>HINCH'S HEROES: IndyCar star James Hinchcliffe picks the five drivers who impressed him most across the 2024 season</p>
-                </div>
-                <div class="news-box">
-                    <video autoplay muted loop>
-                        <source src="../videos/V2.mp4" type="video/mp4">
-                        <source src="your-video-file.webm" type="video/webm">
-                        Your browser does not support the video tag.
-                    </video>
-                    <h3>Feature</h3>
-                    <p>From team mate spats to a Safety Car drought – 10 moments you might have forgotten from the 2024 season</p>
-                </div>
-        </div>
+            <!-- <div class="striped-box">
+            </div> -->
+
+
     </header>
-    
+    <div class="news-page">
+
+    <div class="news-boxes">
+        <div class="news-box">
+            <div class="news-card">
+                <img id="test" src="../images/n1.png">
+                <div class="news-text">
+                    <h3>NEWS</h3>
+                    <p>HINCH'S HEROES: IndyCar star James
+                        Hinchcliffe picks the five drivers who impressed him most across the 2024 season</p>
+                </div>  </div>
+        </div>
+        <div class="news-box">
+            <div class="container">
+                <!-- Photo -->
+                <img id="photo" src="../images/n3.png" alt="Photo" class="hidden">
+                <!-- Video -->
+                <video id="video" class="hidden" width="640" height="360" autoplay muted loop controls>
+                    <source src="../videos/V1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="news-text">
+                <h3>FEATURE</h3>
+                <p>Funniest moment, best radio message and more – F1's 2024 alternative awards</p>
+            </div>
+        </div>
+    </div>
+    <div class="big-div">
+        <div class="container">
+            <h1>Lawrence Barretto’s 5 bold predictions for the 2025 season.  How many will come true this year?</h1>
+            <a href="https://www.formula1.com/en/latest/article/lawrence-barrettos-5-bold-predictions-for-the-2025-season-how-many-will-come.3WDvl3efICX9cC4RVgtHTG"><img src="../images/big.png"></a>
+        </div>
+    </div>
+</div>
+
+    <script src="../js/news.js"></script>
 </body>
+
 </html>
