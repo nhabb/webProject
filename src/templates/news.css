@@ -1,5 +1,5 @@
 body {
-  display: flex;
+  /* display: flex; */
   /* Enables Flexbox on the body */
   justify-content: center;
   /* Centers horizontally */
@@ -19,7 +19,7 @@ body {
   /* background-color: cyan; */
   gap: 2rem;
   padding: 2rem;
-  padding-top: 150px;
+  padding-top: 300px;
 }
 
 .news-boxes {
@@ -32,13 +32,13 @@ body {
   width: 80%;
   height: 100px;
   background: repeating-linear-gradient(135deg,
-      /* #e0e0e0, */
-      rgb(21 21 30),
-      /* #e0e0e0 4px, */
-      rgb(21 21 30) 5px,
+      #e0e0e0,
+      /* rgb(21 21 30), */
+      #e0e0e0 4px,
+      /* rgb(21 21 30) 5px, */
       /* Stripe thickness */
-      #222a39 2px,
-      #222a39 10px
+      transparent 2px,
+      transparent 10px
       /* Space between stripes */
     );
   border-radius: 1px;
@@ -151,7 +151,7 @@ video {
   height: 100vh;
   display: grid;
   position: sticky;
-  top: 150px;
+  top: 50px;
   grid-column: span 2;
   padding: 2rem;
   border-radius: 0 24px 0 0;
@@ -162,4 +162,118 @@ video {
 .big-div img {
   max-width: 100%;
   border-radius: 0 8px 0 0;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+a:link
+{
+  color: black;
+}
+
+a:visited
+{
+  color: black;
+}
+
+
+.news-page2 {
+  /* background-color: cyan; */
+  padding: 2rem;
+  padding-top: 50px;
+}
+
+.big-div2 {
+  width: 1400px;
+  top: 50px;
+  padding: 2rem;
+  border-radius: 0 24px 0 0;
+  border-top: 8px solid #653f87;
+  border-right: 8px solid #653f87;
+  border-bottom: 8px solid #653f87;
+
+}
+
+.big-img
+{
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #653f87;
+  position: relative;
+}
+
+.big-img .gradient {
+  background-image: linear-gradient(to right, #653f87 0%, #653f87 50%, transparent 75%);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1000;
+}
+
+.big-img img
+{
+  max-width: 50%;
+}
+
+.purple-text {
+  font-family:"titilluim web";
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  bottom: 300px;
+  font-size: 35px;
+  width: 100%;
+  padding-left: 35px;
+  position: relative;
+  z-index: 1000;
+  color: white;
+}
+
+
+.big-div2 p
+{
+  font-family:"titilluim web";
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  bottom: 290px;
+  font-size: 20px;
+  width: 100%;
+  padding-left: 35px;
+  position: relative;
+  z-index: 1000;
+  color: white; 
+}
+
+
+/* Button container */
+.button1 {
+  position: relative; /* Ensure it respects child positioning */
+  padding-left: 35px; /* Reset any unnecessary padding */
+}
+
+/* Button styles */
+.big-div2 button {
+  position: relative; /* Required for bottom to work */
+  bottom: 250px; /* Raise the button */
+  background-color: white;
+  font-family: "Russo One", sans-serif;
+  height: 40px;
+  border-radius: 10px;
+  border: 3px solid white;
+  z-index: 1000; /* Ensure it appears above other elements */
+  transition: border-color 0.5s;
+  padding: 0 20px; /* Add padding for a better look */
+  cursor: pointer; /* Add pointer cursor on hover */
+}
+
+/* Hover state */
+.big-div2 button:hover {
+  border: 3px solid red;
 }

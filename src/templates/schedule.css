@@ -133,6 +133,25 @@ body {
     height: 280px;
 }
 
+.driver-bg
+{
+width: 80%;
+  height: 100px;
+  background: repeating-linear-gradient(135deg,
+      /* #e0e0e0, */
+      rgb(21 21 30),
+      /* #e0e0e0 4px, */
+      rgb(21 21 30) 5px,
+      /* Stripe thickness */
+      #222a39 2px,
+      #222a39 10px
+      /* Space between stripes */
+    );
+  border-radius: 1px;
+  margin-left: 130px;
+  margin-top: 15px;
+  /* margin-right: 50px; */
+}
 .race-details .name {
     font-family: "titilluim web";
     display: flex;
