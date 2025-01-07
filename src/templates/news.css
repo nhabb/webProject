@@ -47,6 +47,26 @@ body {
   /* margin-right: 50px; */
 }
 
+.stbox {
+  width: 80%;
+  height: 100px;
+  background: repeating-linear-gradient(135deg,
+      /* #e0e0e0, */
+      rgb(21 21 30),
+      /* #e0e0e0 4px, */
+      rgb(21 21 30) 5px,
+      /* Stripe thickness */
+      rgb(21 21 30)2px,
+      rgb(21 21 30) 10px
+      /* Space between stripes */
+    );
+  border-radius: 1px;
+  margin-left: 130px;
+  margin-top: 15px;
+  /* margin-right: 50px; */
+}
+
+
 .news-box {
   display: flex;
   flex-direction: column;
@@ -82,10 +102,23 @@ body {
   background-color: white;
   padding-left: 5px;
 }
-
-.news-box p {
+.news-page3 .news-box .news-text {
   flex-grow: 1;
-  font-family: "titilluim web";
+  border: 1px solid grey;
+  border-top: none;
+  /* border-right: 1px solid black; */
+  border-left: none;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 0;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  z-index: 1000;
+  background-color: white;
+  padding-left: 5px;
+}
+.news-box p {
+  /*flex-grow: 1;*/
+  font-family: "Titillium Web";
   align-self: flex-end;
   text-align: left;
   margin-bottom: 50px;
@@ -112,14 +145,14 @@ body {
 
 }
 
-#test {
-  /* position: absolute; Allows the image to overlap other elements */
+/* #test {
+   position: absolute; Allows the image to overlap other elements 
   z-index: 10;
   top: 0;
   left: 0;
   width: auto;
   height: auto;
-}
+} */
 
 .container {
   position: relative;
@@ -189,6 +222,7 @@ a:visited
 
 .big-div2 {
   width: 1400px;
+  height: 400px;
   top: 50px;
   padding: 2rem;
   border-radius: 0 24px 0 0;
@@ -207,6 +241,10 @@ a:visited
   background-color: #653f87;
   position: relative;
 }
+.big-img img
+{
+  max-width: 50%;
+}
 
 .big-img .gradient {
   background-image: linear-gradient(to right, #653f87 0%, #653f87 50%, transparent 75%);
@@ -216,13 +254,9 @@ a:visited
   z-index: 1000;
 }
 
-.big-img img
-{
-  max-width: 50%;
-}
 
 .purple-text {
-  font-family:"titilluim web";
+  font-family:"Titillium Web";
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -238,7 +272,7 @@ a:visited
 
 .big-div2 p
 {
-  font-family:"titilluim web";
+  font-family:"Titillium Web";
   display: flex;
   justify-content: flex-start;
   flex-wrap: wrap;
@@ -276,4 +310,206 @@ a:visited
 /* Hover state */
 .big-div2 button:hover {
   border: 3px solid red;
+}
+
+
+.news-page3 {
+  display: grid;
+  grid-template-rows: repeat(3, 1fr); /* 4 equal columns */
+  gap: 2rem; /* Space between items */
+  padding: 2rem;
+  height: 130px;
+  /* padding-top: 300px; */
+  /* border-top: 10px solid black; */
+  margin-top: 100px;
+  margin-bottom: 800px;
+}
+
+.news-page3 .news-box
+{
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  /* Stack children vertically */
+  /* justify-content: space-between; */
+  /* Push children to the bottom */
+  /* margin-bottom: 60px; */
+  /* margin-left: 130px; */
+  /* height: 150px; */
+  padding: 0;
+  width: 430px;
+  background: var(--bg-color);
+  border-radius: 10px;  
+  text-align: center;
+  /* overflow: hidden; */
+  transition: transform 0.5;
+  /* overflow: clip; */
+  z-index: 5;
+  transition: all 0.5s ease;
+}
+
+.thick-line
+{
+  max-width: 96.5%;
+  margin-left: 35px;
+  border-top: 10px solid black;
+}
+
+.more-news
+{
+  font-family: "russo";
+  padding-left: 35px;;
+}
+
+.news-page3 .news-boxes {
+  margin: 0 10px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  grid-auto-rows: auto;
+  gap: 4rem;
+}
+
+/* Footer Styles */
+.footer {
+  background-color: #ff0000; /* Red background */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-left, .footer-center, .footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.custom-logo {
+  width: 100px; /* Adjust size for your logo */
+}
+
+.footer-center {
+  flex: 2;
+  text-align: center;
+  flex-direction: column;
+}
+
+.f1-logo {
+  width: 100px; /* Adjust size as needed */
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-note {
+  font-size: 14px;
+  font-family: "russo one", sans-serif;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+    justify-content: center;
+    margin-bottom: 15px;
+  }
+
+  .custom-logo, .f1-logo {
+    width: 80px;
+  }
+
+  .icon {
+    width: 24px;
+    height: 24px;
+  }
+
+  .footer-note {
+    font-size: 12px;
+  }
+}
+
+
+/* Tooltip Container */
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+/* Tooltip Styling */
+.tooltip {
+  display: none; /* Hidden by default */
+  position: absolute;
+  top: 50%; /* Center vertically relative to the LinkedIn icon */
+  left: 100%; /* Position to the right of the icon */
+  transform: translateY(-50%); /* Center tooltip vertically */
+  background-color: #ffffff; /* White background */
+  color: #333333; /* Dark text */
+  border: 1px solid #ccc; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 10px 15px; /* Internal padding */
+  width: 200px; /* Tooltip width */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  text-align: left;
+  z-index: 10;
+}
+
+/* Tooltip Links */
+.tooltip p {
+  margin: 0 0 10px; /* Margin for spacing */
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tooltip a {
+  display: block;
+  color: #0077b5; /* LinkedIn blue */
+  text-decoration: none;
+  font-size: 14px;
+  margin: 5px 0;
+  transition: color 0.3s;
+}
+
+.tooltip a:hover {
+  color: #005582; /* Darker blue on hover */
+}
+
+/* Show Tooltip on Hover */
+.tooltip-container:hover .tooltip {
+  display: block; /* Show tooltip */
 }
