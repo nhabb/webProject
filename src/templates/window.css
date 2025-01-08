@@ -1,0 +1,27 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    width: 1900px;
+    background-color: rgb(21 21 30);
+}
+
+.vid {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80vw; /* Adjust to cover 90% of the viewport width */
+    height: 80vh; /* Adjust to cover 90% of the viewport height */
+    overflow: hidden; /* Ensures no overflow if the aspect ratio differs */
+}
+
+.vid video {
+    width: 100%; /* Makes the video fill the container's width */
+    height: 100%; /* Makes the video fill the container's height */
+    object-fit: cover; /* Ensures the video fills the space without distortion */
+}
