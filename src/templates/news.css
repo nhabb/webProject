@@ -358,7 +358,14 @@ a:visited
 .more-news
 {
   font-family: "russo";
-  padding-left: 35px;;
+  padding-left: 35px;
+  transition: color 0.5s;
+}
+
+.more-news:hover
+{
+  color: red;
+  cursor: pointer;
 }
 
 .news-page3 .news-boxes {
