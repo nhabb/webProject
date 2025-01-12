@@ -2,14 +2,13 @@ body {
     overflow-x: hidden;
     font-family: "Russo One", sans-serif;
     background-color: var(--bg-color);
-    padding: 60px 0 0; /* Add top padding to make space for the navbar */
+    padding: 60px 0 0;
     margin: 0;
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 .big-box {
     font-weight: bolder;
@@ -20,12 +19,12 @@ body {
     border-left: none;
     border-bottom: none;
     padding: 20px 500px 20px 0px;
-    margin-top: 80px; /* Add space to move below the navbar */
+    margin-top: 80px;
 }
 
 .page-wrapper {
     margin: 50px auto;
-    max-width: 1200px; /* Keep content centered and constrained */
+    max-width: 1200px;
     padding: 20px;
 }
 
@@ -33,8 +32,8 @@ body {
     display: grid;
     margin-top: 150px;
     margin-bottom: 100px;
-    grid-template-columns: repeat(3, 1fr); /* Three columns for the grid */
-    gap: 30px; /* Space between cards */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
 }
 
 .race-card {
@@ -54,18 +53,18 @@ body {
 }
 
 .race-card:hover {
-    transform: scale(1.05); /* Enlarge on hover */
-    border-color: #C0C0C0; /* Highlight border */
+    transform: scale(1.05);
+    border-color: #C0C0C0;
 }
 
 .race-details {
     display: flex;
     position: relative;
-    flex-direction: column; /* Align content vertically */
-    justify-content: space-around; /* Spread content evenly */
-    align-items: flex-start; /* Align content to the left */
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
     padding: 15px;
-    gap: 10px; /* Add space between elements */
+    gap: 10px;
 }
 
 .race-details .round {
@@ -77,8 +76,7 @@ body {
     text-align: left;
 }
 
-.race-details .round:hover
-{
+.race-details .round:hover {
     transition: transform 0.5s, border-color 0.5s;
     transform: scale(1.3);
     cursor: pointer;
@@ -97,23 +95,21 @@ body {
     transition: transform 0.5s, border-color 0.5s;
 }
 
-.race-details .flag img:hover
-{
-    transform: scale(1.3); /* Enlarge on hover */
+.race-details .flag img:hover {
+    transform: scale(1.3);
     cursor: pointer;
-
 }
 
 .race-details .date {
     position: relative;
-    margin-left:10px ;
+    margin-left: 10px;
     font-size: 1.2rem;
     margin-bottom: 15px;
-    align-self: flex-start; /* Align to the right */
-    
+    align-self: flex-start;
 }
-.race-details .month{
-    align-self: flex-start; /* Align to the right */
+
+.race-details .month {
+    align-self: flex-start;
     position: absolute;
     top: 140px;
     color: white;
@@ -121,60 +117,50 @@ body {
     border-radius: 8px;
     width: 80px;
 }
-.race-details .photo{
-    max-width: 80%; 
+
+.race-details .photo {
+    max-width: 80%;
 }
 
 .race-details .driver-image img {
     position: absolute;
-    top : 210px;
+    top: 210px;
     right: 70px;
     width: 270px;
     height: 280px;
 }
 
-.driver-bg
-{
-width: 80%;
-  height: 100px;
-  background: repeating-linear-gradient(135deg,
-      /* #e0e0e0, */
-      rgb(21 21 30),
-      /* #e0e0e0 4px, */
-      rgb(21 21 30) 5px,
-      /* Stripe thickness */
-      #222a39 2px,
-      #222a39 10px
-      /* Space between stripes */
-    );
-  border-radius: 1px;
-  margin-left: 130px;
-  margin-top: 15px;
-  /* margin-right: 50px; */
+.driver-bg {
+    width: 80%;
+    height: 100px;
+    background: repeating-linear-gradient(135deg, rgb(21 21 30), rgb(21 21 30) 5px, #222a39 2px, #222a39 10px);
+    border-radius: 1px;
+    margin-left: 130px;
+    margin-top: 15px;
 }
+
 .race-details .name {
     font-family: "titilluim web";
     display: flex;
     flex-wrap: nowrap;
     position: absolute;
-    /* left: 95px; */
     top: 155px;
     font-size: 1.2rem;
-    /* font-weight: bold; */
     color: white;
     margin-top: 20px;
     margin-bottom: 10px;
     padding-left: 10px;
-    text-align: center; /* Center-align the text */
+    text-align: center;
 }
+
 .header-section {
     margin: 10px auto;
 }
 
 .separator-line {
     width: 100%;
-    height: 1px; /* Line thickness */
-    background-color: #ccc; /* Grey color */
-    margin: 7px auto; /* Add some spacing */
-    border-radius: 1px; /* Slightly rounded edges */
-  }
+    height: 1px;
+    background-color: #ccc;
+    margin: 7px auto;
+    border-radius: 1px;
+}

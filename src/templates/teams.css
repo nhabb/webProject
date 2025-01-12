@@ -27,8 +27,8 @@ body {
 
 .team-container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr); /* Three columns for the grid */
-  gap: 30px; /* Space between cards */
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
 }
 .team-box {
     width: 570px;
@@ -50,17 +50,17 @@ body {
 }
 
 .team-box:hover {
-  transform: scale(1.05); /* Enlarge on hover */
-  border-color: blue; /* Highlight border */
+  transform: scale(1.05);
+  border-color: blue;
   cursor: pointer;
 }
 
 .separator-line {
     width: 100%;
-    height: 1px; /* Line thickness */
-    background-color: #ccc; /* Grey color */
-    margin: 7px auto; /* Add some spacing */
-    border-radius: 1px; /* Slightly rounded edges */
+    height: 1px;
+    background-color: #ccc;
+    margin: 7px auto;
+    border-radius: 1px;
   }
 .driver1-img img {
   height: 65px;

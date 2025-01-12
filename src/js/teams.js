@@ -62,4 +62,3 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 });
 
-// window.location.href = "news.html";

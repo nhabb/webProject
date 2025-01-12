@@ -1,0 +1,141 @@
+.footer {
+  background-color: #ff0000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  margin-top: auto;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+.footer-left, .footer-center, .footer-right {
+  display: flex;
+  align-items: center;
+}
+
+.footer-left {
+  flex: 1;
+  justify-content: flex-start;
+}
+
+.custom-logo {
+  width: 100px;
+}
+
+.footer-center {
+  flex: 2;
+  text-align: center;
+  flex-direction: column;
+}
+
+.f1-logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.footer-links {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.footer-right {
+  flex: 1;
+  text-align: right;
+}
+
+.footer-note {
+  font-size: 14px;
+  font-family: "russo one", sans-serif;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .footer-content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-left, .footer-center, .footer-right {
+      justify-content: center;
+      margin-bottom: 15px;
+  }
+
+  .custom-logo, .f1-logo {
+      width: 80px;
+  }
+
+  .icon {
+      width: 24px;
+      height: 24px;
+  }
+
+  .footer-note {
+      font-size: 12px;
+  }
+}
+
+.tooltip-container {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%);
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px 15px;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  z-index: 10;
+}
+
+.tooltip p {
+  margin: 0 0 10px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.tooltip a {
+  display: block;
+  color: #0077b5;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 5px 0;
+  transition: color 0.3s;
+}
+
+.tooltip a:hover {
+  color: #005582;
+}
+
+.tooltip-container:hover .tooltip {
+  display: block;
+}
