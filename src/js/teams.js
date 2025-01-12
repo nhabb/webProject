@@ -1,6 +1,8 @@
+// Wait until the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
+        // Get the container element where team boxes will be appended
     const container = document.getElementById("team-container");
-
+        // Array of team data, each containing rank, name, points, drivers, and images
     const teams = [
         { rank: 1, name: "McLaren", points: 666, driver1: "Norris", driver1First:"Lando", image: "mc-car.png", logo: "mc-logo.png", driver2: "Piastri", driver2First:"Oscar", },
         { rank: 2, name: "Ferrari", points: 652, driver1: "Leclerc", driver1First:"Charles", image: "fer-car.png", logo: "fer-logo.png", driver2: "Sainz", driver2First:"Carlos" },
@@ -13,10 +15,12 @@ document.addEventListener("DOMContentLoaded", () => {
         { rank: 9, name: "Williams", points: 17, driver1: "Albon", driver1First:"Alexander", image: "wil-car.png", logo: "wil-logo.png", driver2: "Colapinto", driver2First:"Franco" },
         { rank: 10, name: "Kick Sauber", points: 4, driver1: "Bottas", driver1First:"Valtteri", image: "kick-car.png", logo: "kick-logo.png", driver2: "Guanyu", driver2First:"Zhou" },
     ];
-
+        // Iterate through each team in the array
     teams.forEach(team => {
+                // Create a new div element for each team's box
         const box = document.createElement("div");
         box.className = "team-box";
+                // Populate the box's HTML content
         box.innerHTML = `
     <div class="first-div">
         <div class="rank">${team.rank}</div>
@@ -58,6 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
 
     `;
+            // Append the box to the container element
         container.appendChild(box);
     });
 });

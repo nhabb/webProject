@@ -1,6 +1,8 @@
+// Wait until the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
+    // Get the container element where driver cards will be appended
     const container = document.getElementById("player-container");
-  
+    // Array of driver data, each containing rank, name, points, team logo, image, and country flag
     const players = [
         { rank: 1, name: "Max ", lastName: "Verstappen", points: 437, team: "red-bull-racing-logo.png", image: "verstappen.png", country: "NL.png" },
         { rank: 2, name: "Lando", lastName: "Norris", points: 374, team: "mc-logo.png", image: "norris.png", country: "UK.png" },
@@ -28,10 +30,12 @@ document.addEventListener("DOMContentLoaded", () => {
         { rank: 24, name: "Jack ", lastName: "Doohan", points: 0, team: "alp-logo.png", image: "doohan.png", country: "AU.png" },
       ];      
   
-  
+    // Iterate through each player in the array
     players.forEach(player => {
+      // Create a new div element for each player's card
       const card = document.createElement("div");
       card.className = "player-card";
+      // Populate the card's HTML content using template literals
       card.innerHTML = `
       <div class="first-div">
         <div class="rank">${player.rank}</div>
@@ -61,6 +65,8 @@ document.addEventListener("DOMContentLoaded", () => {
           </div>
       </div>
       `;
+      // Append the card to the container element
+
       container.appendChild(card);
     });
   });

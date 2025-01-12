@@ -1,6 +1,8 @@
+// Wait until the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", () => {
+    // Get the container element where race cards will be appended
   const container = document.getElementById("race-container");
-
+    // Array of race data, each containing round, name, date, and images
   const Races = [
       { round: 1, name: "Bahrain", image: "verstappen.png", country: "bah.png", date: "29-02",month:"FEB-MAR",img:"date.png" },
       { round: 2, name: "Saudi Arabian", image: "verstappen.png", country: "KSA.png", date: "07-09",month:"MAR",img: "date.png" },
@@ -27,10 +29,12 @@ document.addEventListener("DOMContentLoaded", () => {
       { round: 23, name: "Qatar", image: "verstappen.png", country: "qa.png", date: "29-01",month: "NOV-DEC",img: "date.png"},
       { round: 24, name: "Abu Dhabi", image: "norris.png", country: "UAE.png", date: "06-08" ,month: "DEC",img: "date.png"}
   ];
-
+      // Iterate through each race in the array
   Races.forEach(race => {
+        // Create a new div element for each race card
       const card = document.createElement("div");
       card.className = "race-card";
+        // Populate the card's HTML content
       card.innerHTML = `
           <div class="race-details">
               <div class="round">${race.round}</div>
@@ -49,6 +53,7 @@ document.addEventListener("DOMContentLoaded", () => {
               </div>
           </div>
       `;
+        // Append the card to the container element
       container.appendChild(card);
   });
 });

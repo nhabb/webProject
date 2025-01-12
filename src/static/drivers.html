@@ -1,76 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Specifies the character encoding for the HTML document -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drivers</title>
-    <link href="../templates/navBar.css" rel="stylesheet">
-    <link href="../templates/drivers.css" rel="stylesheet">
-    <link href="../templates/footer.css" rel="stylesheet">
 
-    <link rel="stylesheet" href="../templates/globals.css">
+    <!-- Sets the viewport to ensure the page is mobile responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Title of the webpage -->
+    <title>Drivers</title>
+
+    <!-- External CSS stylesheets -->
+    <link href="../templates/navBar.css" rel="stylesheet"> <!-- Navigation bar styles -->
+    <link href="../templates/drivers.css" rel="stylesheet"> <!-- Drivers page-specific styles -->
+    <link href="../templates/footer.css" rel="stylesheet"> <!-- Footer styles -->
+    <link rel="stylesheet" href="../templates/globals.css"> <!-- Global shared styles -->
+
+    <!-- Google Fonts for custom typography -->
     <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Favicon for the page -->
     <link rel="icon" type="image/png" href="../images/f1_icon.png">
 </head>
 <body>
-        <header class="nav">
+    <!-- Navigation Header -->
+    <header class="nav">
         <nav class="navbar">
             <div class="logo">
+                <!-- Logo that redirects to the news page -->
                 <a href="../static/news.html"><img src="../images/f1_logo.png" alt="F1 Logo"></a>
             </div>
+            <!-- Navigation links -->
             <ul class="nav-links">
-                <li><a href="news.html">News</a></li>
-                <li><a href="schedule.html">Schedule</a></li>
-                <li><a>Drivers</a></li>
-                <li><a href="teams.html">Teams</a></li>
+                <li><a href="news.html">News</a></li> <!-- Link to the news page -->
+                <li><a href="schedule.html">Schedule</a></li> <!-- Link to the schedule page -->
+                <li><a>Drivers</a></li> <!-- Current page (no link) -->
+                <li><a href="teams.html">Teams</a></li> <!-- Link to the teams page -->
             </ul>
         </nav>
     </header>
-        <div class="all-page">
-            <div class="big-box">
-                F1 DRIVERS 2024
-            </div>
-            <div id="player-container" class="player-container"></div>
+
+    <!-- Main Content Section -->
+    <div class="all-page">
+        <!-- Header displaying the title -->
+        <div class="big-box">
+            F1 DRIVERS 2024
+        </div>
+        <!-- Container where the driver cards will be dynamically added by JavaScript -->
+        <div id="player-container" class="player-container"></div>
     </div>
 
+    <!-- Footer Section -->
     <footer class="footer">
         <div class="footer-content">
-          <div class="footer-left">
-            <img src="../images/f1_logo.png" alt="Your Logo" class="custom-logo">
-          </div>
-          <div class="footer-center">
-            <div class="footer-links">
-              <a href="https://github.com/yourprofile" target="_blank" class="footer-link">
-                <img src="../images/github.png" alt="GitHub" class="icon">
-              </a>
-              <div class="tooltip-container">
-                <a href="" target="_blank" class="footer-link">
-                  <img src="../images/linkedin.png" alt="LinkedIn" class="icon">
-                </a>
-                <div class="tooltip side-tooltip">
-                  <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">Nehmeh Haber</a>
-                  <a href="https://www.linkedin.com/in/joe-mazloum-464a4b338?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Joe Mazloum</a>
-                </div>
-              </div>
-              <div class="tooltip-container">
-                <a href="" target="_blank" class="footer-link">
-                  <img src="../images/mail.png" alt="Email" class="icon">
-                </a>
-                <div class="tooltip side-tooltip">
-                  <a href="mailto:nehmatallah.haber@st.ul.edu.lb?subject=Hello&body=Hi%20there!" target="_blank">Nehmeh Haber</a>
-                  <a href="mailto:Joe.mazloum.1@st.ul.edu.lb?subject=Hello&body=Hi%20there!" target="_blank">Joe Mazloum</a>
-                </div>
-              </div>
+            <!-- Left section with the logo -->
+            <div class="footer-left">
+                <img src="../images/f1_logo.png" alt="Your Logo" class="custom-logo">
             </div>
-          </div>
-          <div class="footer-right">
-            <p class="footer-note">
-              This Project Is For Educational Purposes
-            </p>
-          </div>
+            <!-- Center section with social and contact links -->
+            <div class="footer-center">
+                <div class="footer-links">
+                    <!-- GitHub link -->
+                    <a href="https://github.com/yourprofile" target="_blank" class="footer-link">
+                        <img src="../images/github.png" alt="GitHub" class="icon">
+                    </a>
+                    <!-- LinkedIn with tooltip -->
+                    <div class="tooltip-container">
+                        <a href="" target="_blank" class="footer-link">
+                            <img src="../images/linkedin.png" alt="LinkedIn" class="icon">
+                        </a>
+                        <div class="tooltip side-tooltip">
+                            <a href="https://www.linkedin.com/public-profile/settings?trk=d_flagship3_profile_self_view_public_profile" target="_blank">Nehmeh Haber</a>
+                            <a href="https://www.linkedin.com/in/joe-mazloum-464a4b338?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">Joe Mazloum</a>
+                        </div>
+                    </div>
+                    <!-- Email with tooltip -->
+                    <div class="tooltip-container">
+                        <a href="" target="_blank" class="footer-link">
+                            <img src="../images/mail.png" alt="Email" class="icon">
+                        </a>
+                        <div class="tooltip side-tooltip">
+                            <a href="mailto:nehmatallah.haber@st.ul.edu.lb?subject=Hello&body=Hi%20there!" target="_blank">Nehmeh Haber</a>
+                            <a href="mailto:Joe.mazloum.1@st.ul.edu.lb?subject=Hello&body=Hi%20there!" target="_blank">Joe Mazloum</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Right section with the footer note -->
+            <div class="footer-right">
+                <p class="footer-note">
+                    This Project Is For Educational Purposes
+                </p>
+            </div>
         </div>
-      </footer>
+    </footer>
+
+    <!-- JavaScript file to dynamically populate driver cards -->
     <script src="../js/drivers.js" defer></script>
 </body>
 </html>

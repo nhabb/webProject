@@ -1,10 +1,12 @@
+/* Root Variables */
 :root {
-    --bg-color: #f5f5f5;
-    --accent-color: red;
+    --bg-color: #f5f5f5; /* Defines a variable for the background color */
+    --accent-color: red; /* Defines a variable for the accent color */
 }
   
-  body, html {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Global Styles for Body and HTML */
+body, html {
+    margin: 0; /* Removes default margin from body and html */
+    padding: 0; /* Removes default padding from body and html */
+    box-sizing: border-box; /* Sets the box-sizing property to include padding and borders in width/height calculations */
 }
