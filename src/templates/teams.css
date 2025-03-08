@@ -197,3 +197,91 @@ body {
   transform: scale(1.1);
   cursor: pointer;
 }
+
+/* Base styles remain unchanged */
+
+/* Tablets (max-width: 1024px) */
+@media screen and (max-width: 1024px) {
+  .big-box {
+    font-size: 50px;
+    padding: 20px 300px 20px 0;
+  }
+  
+  .all-page {
+    margin: 100px;
+  }
+
+  .team-container {
+    grid-template-columns: 1fr;
+  }
+
+  .team-box {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+/* Mobile (max-width: 768px) */
+@media screen and (max-width: 768px) {
+  .big-box {
+    font-size: 40px;
+    padding: 20px 100px 20px 0;
+    margin-bottom: 50px;
+  }
+
+  .all-page {
+    margin: 50px;
+  }
+
+  .team-box {
+    width: 100%;
+    padding: 15px;
+  }
+
+  .first-div, .second-div, .third-div {
+    font-size: 22px;
+    padding: 5px;
+  }
+
+  .driver1, .driver2 {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+
+  .driver1-img img, .driver2-img img, .team-logo img {
+    height: 50px;
+    width: 50px;
+  }
+}
+
+/* Small Mobile (max-width: 480px) */
+@media screen and (max-width: 480px) {
+  .big-box {
+    font-size: 30px;
+    padding: 10px;
+    margin-bottom: 30px;
+  }
+
+  .all-page {
+    margin: 20px;
+  }
+
+  .team-box {
+    padding: 10px;
+  }
+
+  .first-div, .second-div, .third-div {
+    font-size: 18px;
+  }
+
+  .driver1, .driver2 {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .driver1-img img, .driver2-img img, .team-logo img {
+    height: 40px;
+    width: 40px;
+  }
+}

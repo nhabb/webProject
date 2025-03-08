@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="../templates/window.css" rel="stylesheet">
-    <title>Video</title>
+    <title>Video Player</title>
+    <link rel="stylesheet" href="../templates/window.css">
 </head>
 <body>
-    <div class="vid">
-        <video src="../videos/V3.mp4" controls autoplay></video>
+
+    <!-- Button to Open Video Player -->
+    <button id="open-video-btn">Open Video</button>
+
+    <!-- Video Modal -->
+    <div id="video-modal" class="video-modal">
+        <div class="video-container">
+            <button class="close-btn" id="close-video-btn">&times;</button>
+            <video id="video-player" src="../videos/V3.mp4" controls autoplay></video>
+        </div>
     </div>
+
+    <script src="../js/window.js"></script>
+
 </body>
 </html>
